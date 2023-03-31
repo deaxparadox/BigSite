@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="heading">
+        <h2><a href="/">BigSite</a></h2>
+    </div>
+    <div class="navbar">
+        <a class="navitem" href="{% url 'human:list' %}">Human</a>
+        <a class="navitem" href="">Address</a>
+    </div>
+
+    <div class="row">
+        <div class="left">
+            {% block left %}{% endblock left %}
+        </div>
+        <div class="content">
+            {% block content %}{% endblock content %}
+        </div>
+        <div class="right">
+            {% block right %}{% endblock right %}
+        </div>
+    </div>
+    
+    <script src="{% static 'js/base.js' %}" type="module"></script>
+</body>
+</html>

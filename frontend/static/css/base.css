@@ -1,0 +1,68 @@
+:root {
+    --color1: #9ed3f1;
+    --color2: #7ec2e9;
+    --color3: #70afd3;
+    --color4: #4c8aad;
+    --color5: #397aa0;
+    --color6: #215d80;
+    --color7: #083853;
+    --color8: #032336;
+    --color9: #001520;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.heading {
+    background-color: var(--color8);
+    color: var(--color3);
+    text-align: center;
+    padding: 15px 0px;
+}
+.heading h2 {
+    background-color: inherit;
+    color: inherit;
+}
+.heading h2 a {
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color3);
+    color: var(--color9);
+    
+}
+.navitem {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 3px 6px;
+}
+.navitem:hover {
+    background-color: var(--color8);
+    color: var(--color3);
+}
+
+.row {
+    display: flex;
+}
+.left {
+    width: 30%;
+    background-color: var(--color2);
+}
+.content {
+    width: 60%;
+    background-color: var(--color3);
+}
+.right {
+    width: 30%;
+    background-color: var(--color2);
+}

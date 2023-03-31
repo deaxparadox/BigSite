@@ -1,0 +1,5 @@
+**/__pycache__
+**/pytext.cache
+**/db.sqlite3
+template_live
+venv

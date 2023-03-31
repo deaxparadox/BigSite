@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}list humans{% endblock title %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'home/list.css' %}">
+
+    <div class="human-list">
+        {% for h in humans %}
+            <h3>
+                <a href="{{ h.get_absolute_url }}">{{ h.username }}</a>
+            </h3>
+        {% endfor %}
+    </div>
+{% endblock content %}
